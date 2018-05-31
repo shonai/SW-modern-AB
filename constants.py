@@ -1,4 +1,4 @@
-DATABASE = 'C:\Users\Knigh\Projects\MAB.db'
+DATABASE = 'C:/Users/Knigh/Projects/mab.db'
 
 CREATE_DB_SCRIPT = '''
 

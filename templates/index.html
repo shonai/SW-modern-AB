@@ -32,8 +32,8 @@
                         <li><a href="#">Page 3</a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><a id="registerButton" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a id="loginButton" href="#"><span class="glyphicon glyphicon-log-in" data-toggle="modal" ></span>Login</a></li>
                   </ul>
             </div>
         </div>
@@ -47,4 +47,53 @@
     </div>
 
 </body>
+
+
+<div id="loginForm" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Member Login</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+            <div class="wrapper" >
+                <form class="form-signin" >
+                    <h2 class="form-signin-heading">Please login</h2>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Email Address" required="" autofocus="" />
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required=""/>
+                    <label class="checkbox">
+                        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+                    </label>
+                    <button class="btn btn-lg btn-primary btn-block" id="btn-login-submit" type="submit">Login</button>
+                </form>
+                <div class="modal-footer">
+				    <a href="#">Forgot Password?</a>
+			    </div>
+            </div>
+
+		</div>
+	</div>
+</div>
+
+<div id="registerForm" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Member Registration</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+            <div class="wrapper" >
+                <form class="form-signin" >
+                    <h2 class="form-signin-heading">Register</h2>
+                    <input type="text" class="form-control" id="username-reg" name="username" placeholder="Email Address" required="" autofocus="" />
+                    <input type="password-reg" class="form-control" id="password-reg" name="password" placeholder="Password" required=""/>
+                    <input type="password-conf" class="form-control" id="password-confirm" name="password" placeholder="Password confirmation" required=""/>
+                    <button class="btn btn-lg btn-primary btn-block" id="btn-register-submit" type="submit">Register</button>
+                </form>
+            </div>
+
+		</div>
+	</div>
+</div>
+
 </html>
