@@ -1,5 +1,2 @@
-DATABASE = 'C:/Users/Knigh/Projects/mab.db'
+DATABASE = 'C:/Users/Knigh/Projects/MAB/mab.db'
 
-CREATE_DB_SCRIPT = '''
-
-'''
